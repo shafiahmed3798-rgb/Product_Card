@@ -61,8 +61,137 @@ Style the footer using background color and center alignment.
 Test your webpage in a browser.
 
 ## PROGRAM:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Card</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+/* Product Card */
+.product-card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    padding:20px;
+    margin-top:80px;
+    transition:0.4s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hover Effect */
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* Image */
+.product-image{
+    width:100%;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+/* Image Zoom */
+.product-card:hover .product-image{
+    transform:scale(1.1);
+}
+
+/* Product Name */
+.product-name{
+    font-size:22px;
+    margin-top:15px;
+}
+
+/* Description */
+.product-desc{
+    font-size:14px;
+    color:#555;
+    margin:10px 0;
+}
+
+/* Price */
+.price{
+    font-size:20px;
+    color:#db3c0c;
+    font-weight:bold;
+}
+
+/* Button */
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#0077ff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Button Hover */
+.product-card:hover button{
+    background:#0a8dd9;
+}
+
+/* Footer */
+footer{
+    margin-top:auto;
+    width:100%;
+    text-align:center;
+    background:#d0b4b4;
+    color:white;
+    padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+    <footer>
+Learner Name: SHAFI AHMED M S | Register Number: 25014933
+</footer>
+
+<div class="product-card">
+
+<img src="image copy.png"class="product-image">
+
+<h2 class="product-name">Smartphone</h2>
+
+<p class="product-desc">
+    The iPhone 16 series introduces Camera Control, Apple Intelligence enhancements, larger displays, new colors, and improved durability, with Pro models offering additional performance and screen upgrades
+</p>
+
+<p class="price"> 72,000 </p>
+
+<button>Add to Cart</button>
+
+</div>
+
+
+
+</body>
+</html>
+```
 
 ## OUTPUT:
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/55472f9b-8f5a-47f8-b6ec-d6305fcd53d3" />
 
 ## RESULT:
 The Product Card with Hover Effect was successfully designed using HTML and CSS.
